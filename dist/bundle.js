@@ -104,7 +104,8 @@ eval("\nvar content = __webpack_require__(/*! !./node_modules/css-loader/dist/cj
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const show = __webpack_require__(/*! ./show.js */ \"./show.js\");\n__webpack_require__(/*! ./main.css */ \"./main.css\");\nshow('Webpack');\n\n//# sourceURL=webpack:///./main.js?");
+"use strict";
+eval("\n\nvar show = __webpack_require__(/*! ./show.js */ \"./show.js\");\n__webpack_require__(/*! ./main.css */ \"./main.css\");\nshow('Webpack');\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ }),
 
@@ -115,7 +116,7 @@ eval("const show = __webpack_require__(/*! ./show.js */ \"./show.js\");\n__webpa
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"#app{\\n    text-align: center;\\n    font-size: 20px;\\n    color: blue;\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./main.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"#app{\\n    text-align: center;\\n    font-size: 20px;\\n    color: greenyellow;\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./main.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -158,9 +159,10 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
   !*** ./show.js ***!
   \*****************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("function show(content){\n    window.document.getElementById('app').innerHTML = 'hello, ' + content; \n}\nmodule.exports = show;\n\n//# sourceURL=webpack:///./show.js?");
+"use strict";
+eval("\n\nvar a = 1; // test babel\nfunction show(content) {\n    window.document.getElementById('app').innerHTML = 'hello, ' + content;\n}\nmodule.exports = show;\n\n//# sourceURL=webpack:///./show.js?");
 
 /***/ })
 
