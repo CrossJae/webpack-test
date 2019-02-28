@@ -81,42 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./main.css":
+/***/ "./index.js":
 /*!******************!*\
-  !*** ./main.css ***!
+  !*** ./index.js ***!
   \******************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !./node_modules/css-loader/dist/cjs.js!./main.css */ \"./node_modules/css-loader/dist/cjs.js!./main.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"insertAt\":\"top\",\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ./node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./main.css?");
-
-/***/ }),
-
-/***/ "./main.js":
-/*!*****************!*\
-  !*** ./main.js ***!
-  \*****************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
-eval("\n\nvar show = __webpack_require__(/*! ./show.js */ \"./show.js\");\n__webpack_require__(/*! ./main.css */ \"./main.css\");\nshow('Webpack');\n\n//# sourceURL=webpack:///./main.js?");
+eval("\n\nvar show = __webpack_require__(/*! ./src/main.js */ \"./src/main.js\");\n\nshow('Webpack');\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./main.css":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./main.css ***!
-  \********************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/main.css":
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/main.css ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"#app{\\n    text-align: center;\\n    font-size: 20px;\\n    color: greenyellow;\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./main.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"#app{\\n    text-align: center;\\n    font-size: 20px;\\n    color: greenyellow;\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/main.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -154,15 +143,26 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
-/***/ "./show.js":
-/*!*****************!*\
-  !*** ./show.js ***!
-  \*****************/
+/***/ "./src/main.css":
+/*!**********************!*\
+  !*** ./src/main.css ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./main.css */ \"./node_modules/css-loader/dist/cjs.js!./src/main.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"insertAt\":\"top\",\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/main.css?");
+
+/***/ }),
+
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar a = 1; // test babel\nfunction show(content) {\n    window.document.getElementById('app').innerHTML = 'hello, ' + content;\n}\nmodule.exports = show;\n\n//# sourceURL=webpack:///./show.js?");
+eval("\n\nvar a = 1; // test babel\n__webpack_require__(/*! ./main.css */ \"./src/main.css\");\nfunction show(content) {\n    window.document.getElementById('app').innerHTML = 'hello, ' + content;\n}\nmodule.exports = show;\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

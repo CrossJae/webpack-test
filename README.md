@@ -8,5 +8,6 @@
 [] webpack-dev-server
 [] hot
 [] source map
-[] babel
+[x] babel
     [] 用es5的prototype实现es6的class
+[] 引入swiper
