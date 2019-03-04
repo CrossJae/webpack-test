@@ -10,4 +10,5 @@
 [] source map
 [x] babel
     [] 用es5的prototype实现es6的class
-[] 引入swiper
+[x] 引入swiper
+[] 数据是静态的
